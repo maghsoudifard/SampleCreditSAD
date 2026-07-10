@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سند معماری سامانه خرید آنلاین</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      direction: rtl;
+      text-align: right;
+    }
+    .sidebar {
+      right: 0;
+      left: auto;
+      border-right: none;
+      border-left: 1px solid rgba(0,0,0,.07);
+    }
+    .sidebar-nav {
+      padding-right: 15px;
+      padding-left: 0;
+    }
+    .content {
+      left: 0;
+      right: 300px;
+    }
+    .markdown-section {
+      max-width: 900px;
+      padding: 30px 40px;
+      direction: rtl;
+    }
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        transform: translateX(100%);
+      }
+      body.close .sidebar {
+        transform: translateX(0);
+      }
+      .content {
+        right: 0;
+      }
+    }
+    .sidebar-nav li a {
+      font-weight: 400;
+    }
+    .sidebar-nav li.active > a {
+      color: #1e3a8a;
+      font-weight: 700;
+      border-left: none;
+      border-right: 2px solid #1e3a8a;
+      padding-right: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">در حال بارگذاری مستندات سامانه خرید آنلاین...</div>
+  <script>
+    window.$docsify = {
+      name: 'مستندات معماری خرید آنلاین',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      homepage: 'README.md'
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
